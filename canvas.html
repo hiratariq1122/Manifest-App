@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="canvas-style.css">
+    <link rel="stylesheet" href="canvas-headerandfooter.css">
+    
+    <title>Canvas</title>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="head"></div>
+        <img class="logo" src="logo-final.png"> 
+        <ul class="nav-links">
+            <li><a href="notes.php">Notes</a></li>
+            <li><a href="daily-to-do-final.php">To-Do List</a></li>
+            <!-- <li><a href="#"></a></li> -->
+            <li><a href="website-logout.php">Logout</a></li>
+        </ul>
+
+    </nav>
+    <header>
+       
+        <div class="maincontainer">
+         <div class="controlsec">
+             <label for="widthofmarker">Width of marker: </label> 
+             <input type="range" name="widthofmarker" min="5" max="50" value="5" data-sizing="px" ></div>
+             <div class="controlthird">
+             <label for="color">Color: </label>
+             <input type="color" name="color" value="#000000" class="color"></div>
+             <button class="ledeffect">click to add Neon lightning</button>
+             <button class="patternbutton">click to add pattern</button>
+             <button class="ss"> take ss</button>
+        </div>
+     </header>
+     <canvas id="canvas"></canvas>
+
+     <div class="footer">
+        <div class="innerfooter">
+            <div class="footer-items">
+                <h1>Manifest</h1>
+                <p>Focus on what matters most</p>
+                <p><a href=""></a>Back to top</p>
+            </div>
+            <div class="footer-items">
+                <h3>Follow</h3>
+                <ul>
+                    <a href=""><i class="fa fa-facebook icon-2x"></i></a>
+                    <a href=""><i class="fa fa-instagram" ></i></a>
+                    <a href=""><i class="fa fa-twitter" ></i></a>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="btm-most">
+            All rights reserved &copy 2020
+        </div>
+    </div>
+    
+     <script src="html.min.js"></script>
+     <script src="canvas.js"></script>
+     <script src="hamburgerresponsive.js"></script>
+</body>
+</html>
